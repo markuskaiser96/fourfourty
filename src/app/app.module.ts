@@ -11,6 +11,7 @@ import { RequestComponent } from './request/request.component';
 import { FindComponent } from './find/find.component';
 import { SearchComponent } from './search/search.component';
 import { SearchagentComponent } from './searchagent/searchagent.component';
+import { NewSearchAgentComponent } from './searchagent/new-searchagent.component'
 import { FavouritesComponent } from './favourites/favourites.component';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FavouritesComponent } from './favourites/favourites.component';
   declarations: [
     AppComponent,
     DashboardComponent, OverviewComponent, MyProfileComponent, RequestComponent,
-    FindComponent, SearchComponent, SearchagentComponent, FavouritesComponent
+    FindComponent, SearchComponent, SearchagentComponent, NewSearchAgentComponent,
+    FavouritesComponent
   ],
 
   /* other modules. Everything of those imported modules is available to THIS modules declarations */

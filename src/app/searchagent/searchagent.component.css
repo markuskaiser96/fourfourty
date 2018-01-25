@@ -1,0 +1,19 @@
+#new-button-right-upper {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 49px;
+  height: 49px;
+  border-radius: 30px;
+  border: 0px;
+  padding: 4px 0px 0px 1px;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 49px;
+  text-align: center;
+  -webkit-box-shadow: -2px 2px 7px 0px rgba(130, 130, 130, 0.75);
+  -moz-box-shadow:    -2px 2px 7px 0px rgba(130, 130, 130, 0.75);
+  box-shadow:         -2px 2px 7px 0px rgba(130, 130, 130, 0.75);
+  cursor: pointer;
+}

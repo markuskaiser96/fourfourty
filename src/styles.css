@@ -6,104 +6,215 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran');
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:200');
 
-body {
-  margin: 0;
-  background: #EEE;
-  overflow-x: hidden;
-  width: 100%;
-  min-height: 100%;
-}
-nav {
-  display: block;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 50px;
-  z-index: 10000;
-  background-color: #722631
-}
-nav a.nav-item {
-  display: block;
-  position: relative;
-  float: left;
-  height: inherit;
-  line-height: 50px;
-  padding: 0% 1%;
-  text-decoration: none;
-  color: #FFF;
-  font-family: 'PT Sans', sans-serif;
-}
-nav a.nav-item:first-child {
-  /*font-family: 'Catamaran', sans-serif;
-  font-weight: bold;
-  */
-  font-family: 'Advent Pro', sans-serif;
-  font-weight: 200;
-  padding: 0% 2%;
-}
-h1 {
-  margin: 0;
-}
-footer {
-  display: block;
-  position: fixed;
-  bottom: -50px;
-  width: 100%;
-  height: 50px;
-  background-color: #722631
-}
-footer a.footer-item {
-  display: block;
-  position: relative;
-  float: right;
-  height: inherit;
-  line-height: 50px;
-  padding: 0% 1%;
-  text-decoration: none;
-  color: #FFF;
-  font-family: 'PT Sans', sans-serif;
-}
-div.container {
-  position: relative;
-  width: 100%;
-  margin: 50px 0px;
-}
-div.container-nav {
-  position: absolute;
-  left: 0px;
-  z-index: 9999;
-  width: 20%;
-  height: auto;
-}
-div.container-nav a.container-nav-item {
-  display: block;
-  position: relative;
-  width: 96%;
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 2%;
-  border-bottom: 1px solid #CCC;
-  background: #FFF;
-  text-decoration: none;
-  color: #333;
-  font-family: 'PT Sans', sans-serif;
-}
-div.container-content {
-  position: relative;
-  float: left;
-  width: 75%;
-  min-height: 500px;
-  margin-left: 20%;
-  padding: 2%;
-  padding-bottom: 50px;
-  border-left: 1px solid #CCC;
-  border-collapse: collapse;
-  font-family: 'PT Sans', sans-serif;
-}
-div.container-content h2 {
-  font-family: 'Catamaran', sans-serif;
-}
-button.btn-danger {
-  background-color: #F00;
-  color: #FFF;
-}
+/* layout section */
+  body {
+    margin: 0;
+    background: #EEE;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+  }
+  nav {
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+    background-color: #722631
+  }
+  nav a.nav-item {
+    display: block;
+    position: relative;
+    float: left;
+    height: inherit;
+    line-height: 50px;
+    padding: 0% 1%;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+  }
+  nav a.nav-item:first-child {
+    /*font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    */
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    padding: 0% 2%;
+  }
+  h1 {
+    margin: 0;
+  }
+  footer {
+    display: block;
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #722631
+  }
+  footer a.footer-item {
+    display: block;
+    position: relative;
+    float: right;
+    height: inherit;
+    line-height: 50px;
+    padding: 0% 1%;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+  }
+  div.container {
+    position: relative;
+    width: 100%;
+    margin: 50px 0px;
+  }
+  div.container-nav {
+    position: absolute;
+    left: 0px;
+    z-index: 9999;
+    width: 20%;
+    height: auto;
+  }
+  div.container-nav a.container-nav-item {
+    display: block;
+    position: relative;
+    width: 96%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 2%;
+    border-bottom: 1px solid #CCC;
+    background: #FFF;
+    text-decoration: none;
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+  }
+  div.container-content {
+    position: relative;
+    float: left;
+    width: 75%;
+    min-height: 500px;
+    margin-left: 20%;
+    padding: 2%;
+    padding-bottom: 50px;
+    border-left: 1px solid #CCC;
+    border-collapse: collapse;
+    font-family: 'PT Sans', sans-serif;
+  }
+  div.container-content h2 {
+    font-family: 'Catamaran', sans-serif;
+  }
+
+/* button section */
+/* basic styling */
+  button {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+    padding: 0px 10px;
+    margin: 10px 2px;
+    font-size: 14px;
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(193, 193, 193, 0.75);
+    -moz-box-shadow:    -1px 1px 5px 0px rgba(193, 193, 193, 0.75);
+    box-shadow:         -1px 1px 5px 0px rgba(193, 193, 193, 0.75);
+    cursor: pointer;
+  }
+
+/* PRIMARY */
+  button.primary,
+  span.btn-primary {
+    background: rgb(73, 136, 194);
+    color: #fff;
+  }
+  button.primary:hover,
+  span.btn-primary:hover {
+    animation: primary-hover 0.2s forwards;
+  }
+  @keyframes primary-hover {
+      from {background: rgb(73, 136, 194);}
+      to {background: rgb(49, 151, 232);}
+  }
+
+  /* SUCCESS */
+  button.success,
+  span.btn-success {
+    background: rgb(124, 191, 110);
+    color: #fff;
+  }
+  button.success:hover,
+  span.btn-success:hover {
+    animation: success-hover 0.2s forwards;
+  }
+  @keyframes success-hover {
+      from {background: rgb(124, 191, 110);}
+      to {background: rgb(85, 213, 90);}
+  }
+
+  /* DANGER */
+  button.danger,
+  span.btn-danger {
+    background: rgb(210, 60, 60);
+    color: #fff;
+  }
+  button.danger:hover,
+  span.btn-danger:hover {
+    animation: danger-hover 0.2s forwards;
+  }
+  @keyframes danger-hover {
+    from {background: rgb(210, 60, 60);}
+    to {background: rgb(255, 74, 74);}
+  }
+
+/* dialog section */
+  .dialog-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .dialog-window {
+    position: relative;
+    z-index: 11001;
+    width: 50vw;
+    height: auto;
+    margin: 100px auto;
+    background: #fff;
+    -webkit-box-shadow: -4px 3px 10px 0px rgba(45, 45, 45, 0.75);
+    -moz-box-shadow:    -4px 3px 10px 0px rgba(45, 45, 45, 0.75);
+    box-shadow:         -4px 3px 10px 0px rgba(45, 45, 45, 0.75);
+  }
+  .dialog-header {
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 0% 5%;
+    margin: 15px 0px;
+  }
+  .dialog-header h3 {
+    position: relative;
+    width: inherit;
+  }
+  .dialog-header span.btn-modal-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .dialog-header span.btn-modal-close:hover {
+    transform-origin: 49% 46%;
+    animation: modal-close-hover 0.2s forwards;
+  }
+  @keyframes modal-close-hover {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+  }
+  .dialog-content {
+    position: relative;
+    width: 90%;
+    padding: 0% 5%;
+  }

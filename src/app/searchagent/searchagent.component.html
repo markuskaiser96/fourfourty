@@ -1,4 +1,7 @@
 <h2>{{title}}</h2>
+
+<span class="btn-success" id="new-button-right-upper" (click)="createNewSearchAgent()">+</span>
+
 <hr />
 <h3>Meine Suchagenten</h3>
 <table width="100%" border="1px">
@@ -30,3 +33,5 @@
 <br>
 <hr />
 <h3>Suchagenten erstellen</h3>
+
+<new-searchagent *ngIf="modalNewSearchAgent" (performClose)="closeModal($event)"></new-searchagent>

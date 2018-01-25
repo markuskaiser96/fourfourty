@@ -1,0 +1,21 @@
+<div class="dialog-overlay">
+  <div class="dialog-window">
+    <div class="dialog-header">
+      <h3>Neuen Suchagenten anlegen</h3>
+      <span class="btn-modal-close" (click)="close()">&#x2715;</span>
+    </div>
+    <div class="dialog-content">
+      <hr />
+      <form>
+        <div class="div-100">
+          <label for="name">Gib deinem Suchagenten einen Namen</label>
+          <input type="text" />
+        </div>
+      </form>
+    </div>
+    <div class="dialog-footer">
+      <button class="primary">Anlegen</button>
+      <button class="danger" (click)="close()">Abbrechen</button>
+    </div>
+  </div>
+</div>
